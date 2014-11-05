@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Luis Flores - MusLight</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-55850084-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Luis Flores</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/muslight-banner.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>MusLight</h1>
+                        <h2 class="subheading">The portable party in your pocket music analyser</h2>
+                        <span class="meta">Last Updated November 4, 2014</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p>I really enjoyed working on this project because it was one of the first projects that gave me that "wow, I want to do that!" feeling when I first looked at it. It combines everything that I love: programming, sound and lights. Be sure to visit <a href="http://github.com/Reslof/MusicalLights">my Github page for this project</a> to get the latest code and schematics. Or just keep reading!</p>
+
+                    <h2 class="section-heading">Inspiration</h2>
+
+                    <p>Googling "color organ" turns up a plethora of tutorials for similar project ideas. I wanted to use the 5 meters of RGB LEDs I purchased on Amazon instead of discrete LEDs since that would serve as nice bias lighting for my desk. I also found out that the <a href="https://www.sparkfun.com/products/10468">MSGEQ7</a> is quite a popular choice among music project enthusiasts. Combined with my trusty Arduino Nano, these components made this project a snap and gave me a great final result. </p>
+
+                    <h2 class="section-heading">Design and Prototype</h2>
+
+                    <p>The schematic was straighforward. Using EAGLE and the Sparkfun library, I was able to use some reference designs to produce the MusLight. I quickly got a breadboarded prototype up and running. It was an awesome feeling seeing the music alter the light before my eyes.</p>
+
+                    <a href="projects/muslight/Schematics_and_Layout/Nano_Schematic_Final.jpg">
+                        <img class="img-responsive" src="projects/muslight/Schematics_and_Layout/Nano_Schematic_Final.jpg" alt="">
+                    </a>
+                    <span class="caption text-muted">Arduino Nano Schematic.</span>
+                    <br>
+
+                    <a href="projects/muslight/images/Nano_Breadboard.jpg">
+                        <img class="img-responsive" src="projects/muslight/images/Nano_Breadboard.jpg" alt="">
+                    </a>
+                    <span class="caption text-muted">Arduino Nano breadboarded prototype.</span>
+
+                    <h2 class="section-heading">Optimization</h2>
+
+                    <p>After working out some of the bugs of the initial prototype, I knew I wanted to make a more sturdy and permanent design. However, I felt that using a complete Arduino Nano, was probably not the most cost efficient option. Instead, I opted to create a barebones Arduino using an Atmega328p and crystal. I went back to the drawing board and came up with the following schematic and breadboard prototype.</p>
+
+                    <a href="projects/muslight/Schematics_and_Layout/Atmega_Schematic_Final.png">
+                        <img class="img-responsive" src="projects/muslight/Schematics_and_Layout/Atmega_Schematic_Final.png" alt="">
+                    </a>
+                    <span class="caption text-muted">Barebones Atmega328p Schematic.</span>
+                    <br>
+
+                    <a href="projects/muslight/images/Atmega_Breadboard.jpg">
+                        <img class="img-responsive" src="projects/muslight/images/Atmega_Breadboard.jpg" alt="">
+                    </a>
+                    <span class="caption text-muted">Atmega328p-based breadboarded prototype.</span>
+
+                    <p>Loading the code into the Atmega was straighforward using <a href="https://www.adafruit.com/product/462">Adafruit's AVR ISP Shield Kit</a>. However, at this point in time I had already completed my <a href="picframe.html">PicFrame project.</a> Although using the barebone Atmega was a more cost-efficient and space-saving design, it was simply not worth the extra manual assembly time. However, if I was to design a PCB for this project, I would definitely use the Atmega design.</p>
+
+                    <h2 class="section-heading">Making the Perfboard</h2>
+
+                    <p>At last it was time to do my favorite part of the prototyping process: soldering! I busted out my trusty Hakko F888D and got to work. I opted for a modular design that would let me remove components easily off the board. This made the soldering process easier since it eliminated dangling components. It also allowed me to quickly alter the firmware since halfway into the perfboarding process I decided to also implement a moodlight-mode switch and the corresponding code. Updating the firmware was as easy as turning off the board power.</p>
+
+                    <p>I began by placing the female headers for the Nano, followed by the MOSFETs, stereo jack, powerjack and switches. I decided to add another set of power headers in case I wanted to share the main power supply in the future. The final result is smaller than a credit card! Now that's some good board-level planning!</p>
+
+                    <p>Overall, I really enjoyed working on this project. The effect is mesmerizing. It really takes listening to music to a whole new level. The MusLight currently lives behind my desk, happily chugging along with the LED strip around the back of my monitor. The moodlight mode is fantastic when programming or reading since it helps with vision strain.  </p>
+
+                    <a href="projects/muslight/images/Board_Top_Final.jpg">
+                        <img class="img-responsive" src="projects/muslight/images/Board_Top_Final.jpg" alt="">
+                    </a>
+                    <span class="caption text-muted">Final perfboard design, top view. One of my nicest looking boards to date.</span>
+
+                    <a href="projects/muslight/images/Board_Bot_Final.jpg">
+                        <img class="img-responsive" src="projects/muslight/images/Board_Bot_Final.jpg" alt="">
+                    </a>
+                    <span class="caption text-muted">Final perfboard design, bottom view. One of my nicest looking boards to date.</span>
+
+                    <h2 class="section-heading">Project Files</h2>
+
+                    <p>All schematics, EAGLE files, perfboard planning files and code can be found at my <a href="http://github.com/Reslof/MusicalLights">Github page for this project.</a> If you enjoyed this project, be sure to star it on Github or <a href="contact.html"> send me a message.</a> Be sure to check out my other projects over in the <a href="projects.html"> Projects page!</a></p>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://www.facebook.com/luis.flores.98892">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/reslof">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/pub/luis-flores/a6/782/274">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Luis Flores 2014</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
